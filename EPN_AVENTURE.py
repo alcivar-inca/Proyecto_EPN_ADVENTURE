@@ -19,6 +19,9 @@ Y=405
 echo = True
 reloj = pygame.time.Clock()	#	Variaable para asignar el tiempo de actualizacion de la pantalla
 
+sonido_click = pygame.mixer.music.load("accion.mp3") #sonido de fondo de juego primer nivel 
+sonido_click = pygame.mixer.music.play(1)
+
 while echo:
 	pantalla.blit(nivel_1, [0,0])
 	pantalla.blit(sentido, [X,Y])
